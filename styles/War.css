@@ -1,0 +1,299 @@
+body {
+    background-color: #F4EFDE;
+    /* Sets the background color to a light cream */
+    background-image: url(/images/2244.jpg);
+    /* Adds a background image */
+    background-size: cover;
+    /* Ensures the background image covers the entire area */
+    background-position: center;
+    /* Centers the background image */
+    font-family: 'Assistant', sans-serif;
+    /* Applies the 'Assistant' sans-serif font family */
+}
+
+h1 {
+    text-align: center;
+    /* Centers the text */
+    color: #A7704B;
+    /* Sets the text color to a brown shade */
+    margin-top: 60px;
+    /* Adds space above the header */
+    font-size: 30px;
+    /* Sets the font size */
+    font-weight: bolder;
+    /* Makes the font weight bolder */
+}
+
+h2 {
+    text-align: center;
+    /* Centers the text */
+    font-size: 23px;
+    /* Sets the font size */
+    margin-bottom: 10px;
+    /* Adds space below the header */
+}
+
+.carousel-caption p {
+    color: white;
+    /* Sets the text color to white */
+    font-weight: bold;
+    /* Makes the font weight bold */
+    background-color: black;
+    /* Sets the background color to black */
+}
+
+.carousel {
+    width: 40%;
+    /* Sets the width of the carousel */
+    margin: auto;
+    /* Centers the carousel horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the carousel */
+}
+
+.background-text {
+    word-wrap: break-word;
+    /* Allows long words to be broken and wrap onto the next line */
+    width: 800px;
+    /* Sets the width */
+    justify-content: center;
+    /* Centers content horizontally within a flex container */
+    align-items: center;
+    /* Centers content vertically within a flex container */
+    margin: auto;
+    /* Centers the element horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the element */
+}
+
+@media screen and (max-width: 768px) {
+    .background-text {
+        width: 400px;
+        /* Adjusts width for smaller screens */
+    }
+
+    .carousel {
+        width: 90%;
+        /* Adjusts carousel width for smaller screens */
+    }
+
+    .event.active p,
+    .results p {
+        display: block;
+        /* Ensures text is displayed */
+        word-wrap: break-word;
+        /* Allows long words to break and wrap */
+        width: 400px !important;
+        /* Adjusts width for smaller screens */
+        margin: auto;
+        /* Centers the element horizontally */
+        margin-bottom: 20px;
+        /* Adds space below the element */
+    }
+
+    .hostagesimage img{
+                /* Adjusts hostagesimage width for smaller screens */
+
+        width: 95%;
+        
+    }
+
+
+
+}
+
+.timeline {
+    list-style: none;
+    /* Removes bullet points from list */
+    padding: 0;
+    /* Removes padding */
+}
+
+.event {
+    cursor: pointer;
+    /* Changes cursor to indicate clickable items */
+    margin-bottom: 20px;
+    /* Adds space below the event */
+}
+
+.event h3 {
+    margin-top: 0;
+    /* Removes space above the header */
+    text-align: center;
+    /* Centers the text */
+    font-size: 15px;
+    /* Sets the font size */
+    font-weight: bold;
+    /* Makes the font weight bold */
+    color: #385A41;
+    /* Sets the text color */
+}
+
+.event p {
+    display: none;
+    /* Hides paragraph text by default */
+}
+
+.event.active p {
+    display: block;
+    /* Shows paragraph text when active */
+    word-wrap: break-word;
+    /* Allows long words to break and wrap */
+    width: 800px;
+    /* Sets width */
+    margin: auto;
+    /* Centers the element horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the element */
+}
+
+.Instruction {
+    text-align: center;
+    /* Centers the text */
+}
+
+.icon-heading img {
+    width: 30px;
+    /* Sets image width */
+    height: auto;
+    /* Adjusts height automatically to maintain aspect ratio */
+    margin-right: 10px;
+    /* Adds space to the right of the image */
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    /* Makes the font weight bolder */
+    color: #A7704B;
+    /* Sets the text color */
+}
+
+.results p {
+    display: block;
+    /* Ensures paragraph text is displayed */
+    word-wrap: break-word;
+    /* Allows long words to break and wrap */
+    width: 800px;
+    /* Sets width */
+    margin: auto;
+    /* Centers the element horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the element */
+}
+
+#openModalBtn {
+    justify-content: center;
+    /* Centers content horizontally within a flex container */
+    margin: auto;
+    /* Centers the button horizontally */
+    align-items: center;
+    /* Centers content vertically within a flex container */
+    display: flex;
+    /* Applies flexbox layout */
+    border-radius: 20px;
+    /* Rounds the corners of the button */
+    border: 0;
+    /* Removes the border */
+    cursor: pointer;
+    /* Changes cursor to indicate clickable button */
+    padding: 8px;
+    /* Adds padding inside the button */
+    background-color: #E4C589;
+    /* Sets the background color */
+    color: #A7704B;
+    /* Sets the text color */
+    font-weight: bolder;
+    /* Makes the font weight bolder */
+    width: 105px;
+    /* Sets the width */
+    box-shadow: 5px;
+    /* Adds shadow to the button */
+    margin-bottom: 30px;
+    /* Adds space below the button */
+}
+
+#openModalBtn:active {
+    opacity: 0.8;
+    /* Changes opacity when button is clicked */
+}
+
+/* CSS for the modal */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stays in place */
+    z-index: 999;
+    /* Sits on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enables scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+}
+
+.modal-content {
+    background-color: white;
+    /* Sets the background color */
+    margin: auto;
+    /* Centers the modal horizontally */
+    padding: 20px;
+    /* Adds padding inside the modal */
+    border: 3.5px solid #E4C589;
+    /* Sets the border color and size */
+    width: 80%;
+    /* Sets the width */
+}
+
+.close {
+    color: #A7704B;
+    /* Sets the text color */
+    float: right;
+    /* Positions the close button to the right */
+    font-size: 28px;
+    /* Sets the font size */
+    font-weight: bold;
+    /* Makes the font weight bold */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    /* Changes text color on hover/focus */
+    text-decoration: none;
+    /* Removes underline from text */
+    cursor: pointer;
+    /* Changes cursor to indicate clickable button */
+}
+
+
+.carousel-item img {
+    width: 2899px;
+    /* Sets the width of the images */
+    height: 400px;
+    /* Sets the height of the images */
+}
+
+
+.hostagesimage img {
+
+    height: 550px;
+    /* Centers content horizontally within a flex container */
+
+    justify-content: center;
+    align-items: center;
+    /* Centers the modal horizontally */
+
+    margin: auto;
+    display: flex;
+        /* Adds space to the bottom of the image */
+
+    margin-bottom: 20px;
+}

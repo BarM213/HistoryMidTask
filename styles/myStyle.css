@@ -1,0 +1,260 @@
+﻿body {
+    /* Background color */
+    background-color: #F4EFDE;
+    /* Set the background image */
+    background-image: url(/images/2244.jpg);
+    /* Make the background image cover the entire screen */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Set the font for the entire page */
+    font-family: 'Assistant', sans-serif;
+}
+
+.navbar-brand {
+    /* Make the navbar text bold */
+    font-weight: bolder;
+    /* Color of the navbar brand text */
+    color: #A7704B;
+}
+
+.icon-logo img {
+    /* Set the width of the logo */
+    width: 55px;
+    /* Automatically adjust the height of the logo */
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+
+    color: #A7704B;
+    /* Add space above the text */
+    margin-top: 60px;
+    /* Font size of the text */
+    font-size: 40px;
+
+    font-weight: bolder;
+}
+
+.Instruction {
+    /* Center align the text */
+    text-align: center;
+}
+
+.timeline {
+    /* Position of the timeline */
+    position: relative;
+    /* Add space above the timeline */
+    margin-top: 40px;
+}
+
+.timeline-line {
+    /* Position of the timeline line */
+    position: absolute;
+    /* Width of the timeline line */
+    width: 3px;
+    /* Style of the border */
+    border-style: dotted;
+
+    background-color: #B39E75;
+
+    border-color: #AF8475;
+    /* Position of the top of the timeline line */
+    top: 0;
+    /* Position of the bottom of the timeline line */
+    bottom: 0;
+    /* Position of the left side of the timeline line */
+    left: 50%;
+    /* Move the timeline line to the left by 50% */
+    transform: translateX(-50%);
+    /* Put the timeline behind other elements */
+    z-index: -1;
+}
+
+.Timeline-Icon {
+    /* Background color of the timeline icon */
+    background-color: #E4C589;
+    /* Style of the border of the timeline icon */
+    border-style: solid;
+    /* Color of the border of the timeline icon */
+    border-color: #AB704B;
+
+    height: 50px;
+
+    width: 50px;
+    /* Make the border of the timeline-icon round */
+    border-radius: 50%;
+    /* Color of the text inside the timeline icon */
+    color: #B3704B;
+
+    font-weight: bold;
+    /* Align the content inside the timeline icon horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the timeline icon automatically */
+    margin: auto;
+    /* Put the timeline-icon in front of other elements */
+    z-index: 1;
+}
+
+.Timeline-Content {
+    /* Width of the timeline content */
+    width: 45%;
+    /* Background color of the timeline content */
+    background: #fff;
+    /* Padding inside the timeline content */
+    padding: 20px;
+    /* Space below the timeline content */
+    margin-bottom: 30px;
+    /* Set the border-radius of the timeline content to make it round */
+    border-radius: 15px;
+    /* Add a shadow to the timeline content section */
+    box-shadow: 0 5.5px 0 #E0E0E0;
+}
+
+.Section-Button {
+    /* Padding of the section button */
+    padding: 5px 15px;
+    /* Remove underline from the section button */
+    text-decoration: none;
+    /* Background transparent of the section button */
+    background: transparent;
+    /* Border of the section button */
+    border: 2px solid #0068F5;
+    /* Color of the section button */
+    color: #0068F5;
+    /* Display the section as an in-line block */
+    display: inline-block;
+    /* Make the position of the section button relative to its parent element */
+    position: relative;
+    /* Make the text inside the section button to uppercase */
+    text-transform: uppercase;
+    /* Font size of the section button */
+    font-size: 12px;
+    /* Border-radius of the section button */
+    border-radius: 5px;
+    /* Add a transition effect to the section button */
+    transition: background .1s ease, box-shadow .1s ease;
+    /* Shadow of the section button */
+    box-shadow: 2px 2px 0 #0068F5;
+    /* Change the cursor to a pointer when hovering over the section button */
+    cursor: pointer;
+
+    /* When hovering over the section button */
+    &:hover {
+        /* Remove the box shadow */
+        box-shadow: none;
+        /* Move the section button slightly down and to the right */
+        top: 2px;
+        left: 2px;
+    }
+}
+
+h2 {
+    /* Padding around the heading */
+    padding: 15px;
+    /* Background color of the heading */
+    background: #0068F5;
+    /* Color of the text */
+    color: white;
+    /* Margin around the heading */
+    margin: -20px -20px 0 -20px;
+    /* Font weight of the heading */
+    font-weight: 300;
+    /* Make it border round */
+    border-radius: 15px 15px 0 0;
+    /* Center align the text */
+    text-align: center;
+    /* Make the text bold */
+    font-weight: bold;
+}
+
+.left {
+    /* Align items to the left */
+    justify-content: flex-start;
+    /* Margin on the right */
+    margin-right: auto;
+    /* Add margin on the top */
+    margin-top: -50px;
+}
+
+.right {
+    /* Align items to the right */
+    justify-content: flex-start;
+    /* Margin on the left */
+    margin-left: auto;
+    /* Add margin on the top */
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjustments for the timeline section */
+    #timeline {
+        margin: 30px;
+        padding: 0px;
+        width: 90%;
+    }
+
+    #timeline:before {
+        left: 0;
+    }
+
+    /* Adjustments for timeline items */
+    .timeline-item {
+        .timeline-content {
+            /* Width of the timeline content to 90% */
+            width: 90%;
+            /* Move the timeline content to the right */
+            float: right;
+
+            /* Adjustments for timeline content before and after */
+            &:before,
+            &.right:before {
+                left: 10%;
+                margin-left: -6px;
+                border-left: 0;
+                border-right: 7px solid #0038B7;
+            }
+        }
+
+        /* Adjustments for the timeline icon */
+        .timeline-icon {
+            left: 0;
+        }
+    }
+}
+
+
+/* Animation for timeline content sliding in from the left */
+.Timeline-Content.left {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for timeline content sliding in from the right */
+.Timeline-Content.right {
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
