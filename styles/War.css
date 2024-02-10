@@ -1,7 +1,7 @@
 body {
     background-color: #F4EFDE;
     /* Sets the background color to a light cream */
-    background-image: url(/images/2244.jpg);
+    background-image: url(../HistoryMidTask/images/2244.jpg);
     /* Adds a background image */
     background-size: cover;
     /* Ensures the background image covers the entire area */
